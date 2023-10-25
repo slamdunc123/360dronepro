@@ -1,10 +1,8 @@
 import React from 'react';
-import Tours from '../Tours/Tours';
+import Tours from '../../components/Tours/Tours';
 
 const Page = () => {
-	return (
-		<Tours />
-	);
+	return <Tours />;
 };
 
 export default Page;
