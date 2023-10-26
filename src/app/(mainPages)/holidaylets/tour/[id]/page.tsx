@@ -1,6 +1,3 @@
-//@ts-nocheck
-
-import React from 'react';
 import { tours } from '../../../../config';
 
 const Page = ({ params }: { params: { id: string } }) => {
@@ -11,10 +8,8 @@ const Page = ({ params }: { params: { id: string } }) => {
 			<iframe
 				width='100%'
 				height='100%'
-				// frameBorder='0'
 				allow='xr-spatial-tracking; gyroscope; accelerometer'
-				scrolling='no'
-				src={tour.url}
+				src={tour && tour.url}
 			></iframe>
 		</div>
 	);
@@ -23,4 +18,4 @@ const Page = ({ params }: { params: { id: string } }) => {
 export default Page;
 
 // Return the page without additional layout.
-Page.getLayout = (page) => page;
+Page.getLayout = (page: React.ReactElement) => page;

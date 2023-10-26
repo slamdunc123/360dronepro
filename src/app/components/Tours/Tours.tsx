@@ -1,30 +1,43 @@
-//@ts-nocheck
-
 import Link from 'next/link';
 import React from 'react';
 import { tours } from '../../config';
-console.log('slamdunc ~ file: Tours.tsx:6 ~ tours:', tours);
 
 const Tours = () => {
 	return (
-		<main className='flex flex-col w-full p-2'>
+		<main className='flex flex-col w-full'>
 			{tours.map((item, index) => {
 				return (
-					<article
+					<div
+						className={`md:flex ${index % 2 && 'flex-row-reverse'}`}
 						key={item.id}
-						className={`flex flex-col w-full md:w-1/2 ${
-							index % 2 ? 'self-end' : 'sef-start'
-						}`}
 					>
-						<Link href={`/tour/${item.id}`}>
-							<h2>{item.name}</h2>
-							<img
-								src='https://placehold.co/600x400'
-								className='w-full'
-								alt=''
-							/>
-						</Link>
-					</article>
+						<div
+							className={`flex flex-col w-full md:w-1/2 ${
+								index % 2
+									? 'justify-self-end'
+									: 'justify-self-start'
+							}`}
+						>
+							<Link href={`/tour/${item.id}`}>
+								<img
+									src='https://placehold.co/600x400'
+									className='w-full'
+									alt=''
+								/>
+							</Link>
+						</div>
+						<div
+							className={`flex flex-col w-full md:w-1/2 ${
+								index % 2
+									? 'justify-self-start'
+									: 'justify-self-end'
+							}`}
+						>
+							<Link href={`/tour/${item.id}`}>
+								<h2>{item.name}</h2>
+							</Link>
+						</div>
+					</div>
 				);
 			})}
 		</main>
