@@ -17,6 +17,6 @@ export const tours = [
 	{
 		id: '4',
 		name: 'Dale Farm',
-		url: 'https://kuula.co/share/collection/7JrN5?logo=-1&info=0&fs=0&vr=0&gyro=0&initload=0&thumbs=1&keys=0',
+		url: 'https://kuula.co/share/collection/7JrN5?logo=-1&info=0&fs=1&vr=0&zoom=1&gyro=0&initload=0&thumbs=1',
 	},
 ];
