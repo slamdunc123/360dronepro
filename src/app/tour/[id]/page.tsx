@@ -10,7 +10,7 @@ const Page = ({ params }: { params: { id: string } }) => {
 		<div className='h-full w-full xl:w-10/12'>
 			<iframe
 				width='100%'
-				height='95%'
+				height='100%'
 				// frameBorder='0'
 				allow='xr-spatial-tracking; gyroscope; accelerometer'
 				scrolling='no'
