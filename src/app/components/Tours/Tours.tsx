@@ -7,7 +7,7 @@ console.log('slamdunc ~ file: Tours.tsx:6 ~ tours:', tours);
 
 const Tours = () => {
 	return (
-		<main className='flex flex-col w-screen p-2'>
+		<main className='flex flex-col w-full p-2'>
 			{tours.map((item, index) => {
 				return (
 					<article
