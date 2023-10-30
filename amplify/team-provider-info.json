@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-360dronepro-dev-82706-authRole",
+      "UnauthRoleArn": "arn:aws:iam::349204950142:role/amplify-360dronepro-dev-82706-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::349204950142:role/amplify-360dronepro-dev-82706-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-360dronepro-dev-82706-deployment",
+      "UnauthRoleName": "amplify-360dronepro-dev-82706-unauthRole",
+      "StackName": "amplify-360dronepro-dev-82706",
+      "StackId": "arn:aws:cloudformation:eu-west-2:349204950142:stack/amplify-360dronepro-dev-82706/1cacc700-76fe-11ee-b471-0236e755d952",
+      "AmplifyAppId": "dd7yqradig2v"
+    }
+  }
+}

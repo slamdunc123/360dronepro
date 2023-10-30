@@ -1,0 +1,8 @@
+type Tour @model {
+	id: ID!
+	name: String!
+	caption: String
+	description: String
+	url: String!
+	category: String!
+}
