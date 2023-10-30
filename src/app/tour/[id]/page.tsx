@@ -1,7 +1,24 @@
-import { tours } from '../../config';
+//@ts-nocheck
 
-const Page = ({ params }: { params: { id: string } }) => {
-	const tour = tours.find((item) => item.id === params.id);
+import { Amplify, API, graphqlOperation } from 'aws-amplify';
+import awsExports from '@/aws-exports';
+Amplify.configure({ ...awsExports, ssr: true });
+
+import { getTour } from '../../../graphql/queries';
+
+const fetchTour = async (id) => {
+	const tour = await API.graphql({
+		query: getTour,
+		variables: { id: id },
+	});
+
+	return tour;
+};
+
+const Page = async ({ params }: { params: { id: string } }) => {
+
+	const fetchedTour = await fetchTour(params.id);
+	const tour = fetchedTour.data.getTour;
 
 	return (
 		<div className='h-[85%] lg:h-full w-full xl:w-10/12'>

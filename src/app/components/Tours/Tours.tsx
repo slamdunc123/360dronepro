@@ -1,45 +1,49 @@
+//@ts-nocheck
+
 import Link from 'next/link';
 import React from 'react';
-import { tours } from '../../config';
 
-const Tours = () => {
+const Tours = ({ tours }) => {
 	return (
 		<main className='flex flex-col w-full'>
-			{tours.map((item, index) => {
-				return (
-					<div
-						className={`md:flex ${index % 2 && 'flex-row-reverse'}`}
-						key={item.id}
-					>
+			{tours &&
+				tours.map((item, index) => {
+					return (
 						<div
-							className={`flex flex-col w-full md:w-1/2 ${
-								index % 2
-									? 'justify-self-end'
-									: 'justify-self-start'
+							className={`md:flex ${
+								index % 2 && 'flex-row-reverse'
 							}`}
+							key={item.id}
 						>
-							<Link href={`/tour/${item.id}`}>
-								<img
-									src='https://placehold.co/600x400'
-									className='w-full'
-									alt=''
-								/>
-							</Link>
+							<div
+								className={`flex flex-col w-full md:w-1/2 ${
+									index % 2
+										? 'justify-self-end'
+										: 'justify-self-start'
+								}`}
+							>
+								<Link href={`/tour/${item.id}`}>
+									<img
+										src='https://placehold.co/600x400'
+										className='w-full'
+										alt=''
+									/>
+								</Link>
+							</div>
+							<div
+								className={`flex flex-col w-full md:w-1/2 ${
+									index % 2
+										? 'justify-self-start'
+										: 'justify-self-end'
+								}`}
+							>
+								<Link href={`/tour/${item.id}`}>
+									<h2>{item.name}</h2>
+								</Link>
+							</div>
 						</div>
-						<div
-							className={`flex flex-col w-full md:w-1/2 ${
-								index % 2
-									? 'justify-self-start'
-									: 'justify-self-end'
-							}`}
-						>
-							<Link href={`/tour/${item.id}`}>
-								<h2>{item.name}</h2>
-							</Link>
-						</div>
-					</div>
-				);
-			})}
+					);
+				})}
 		</main>
 	);
 };
