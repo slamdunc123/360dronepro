@@ -16,12 +16,11 @@ const fetchTour = async (id) => {
 };
 
 const Page = async ({ params }: { params: { id: string } }) => {
-
 	const fetchedTour = await fetchTour(params.id);
 	const tour = fetchedTour.data.getTour;
 
 	return (
-		<main className='h-[85%] lg:h-[calc(100%-4rem)] w-full'>
+		<main className='h-[calc(85%-4rem)] lg:h-[calc(100%-4rem)] w-full'>
 			{tour ? (
 				<iframe
 					width='100%'
