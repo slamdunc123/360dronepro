@@ -5,7 +5,7 @@ import React from 'react';
 
 const Tours = ({ tours }) => {
 	return (
-		<main className='flex flex-col w-full'>
+		<main className='flex flex-col w-full h-[calc(100%-4rem)]'>
 			{tours &&
 				tours.map((item, index) => {
 					return (
@@ -22,7 +22,7 @@ const Tours = ({ tours }) => {
 										: 'justify-self-start'
 								}`}
 							>
-								<Link href={`/tour/${item.id}`}>
+								<Link href={`/virtual-tours/${item.id}`}>
 									<img
 										src='https://placehold.co/600x400'
 										className='w-full'
@@ -37,7 +37,7 @@ const Tours = ({ tours }) => {
 										: 'justify-self-end'
 								}`}
 							>
-								<Link href={`/tour/${item.id}`}>
+								<Link href={`/virtual-tours/${item.id}`}>
 									<h2>{item.name}</h2>
 								</Link>
 							</div>

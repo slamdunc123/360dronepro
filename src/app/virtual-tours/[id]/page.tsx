@@ -21,7 +21,7 @@ const Page = async ({ params }: { params: { id: string } }) => {
 	const tour = fetchedTour.data.getTour;
 
 	return (
-		<div className='h-[85%] lg:h-full w-full xl:w-10/12'>
+		<main className='h-[85%] lg:h-[calc(100%-4rem)] w-full'>
 			{tour ? (
 				<iframe
 					width='100%'
@@ -32,11 +32,8 @@ const Page = async ({ params }: { params: { id: string } }) => {
 			) : (
 				'No tour found'
 			)}
-		</div>
+		</main>
 	);
 };
 
 export default Page;
-
-// Return the page without additional layout.
-Page.getLayout = (page: React.ReactElement) => page;

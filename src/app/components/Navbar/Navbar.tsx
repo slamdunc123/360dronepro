@@ -12,17 +12,17 @@ const Navbar = () => {
 		setIsOpen((prevIsOpen) => !prevIsOpen);
 	};
 	return (
-		<nav className='bg-gray-200 flex w-full h-12 justify-between items-center'>
-			<div className='w-32 p-2'>360dronepro</div>
+		<nav className='bg-gray-200 flex w-full h-16 justify-between items-center'>
+			<div className='p-2'>360dronepro</div>
 			<button className='p-2 sm:hidden' onClick={handleMenuOnClick}>
 				{!isOpen ? <MdOutlineMenu /> : <MdOutlineClose />}
 			</button>
-			<div className='w-96 p-2 hidden sm:block'>
+			<div className='p-2 hidden sm:block mr-5'>
 				<ul className='flex justify-between'>
 					<Link href='/'>Home</Link>
-					<Link href='/holiday-lets'>Holiday Lets</Link>
-					<Link href='/rentals'>Rentals</Link>
-					<Link href='/sales'>Sales</Link>
+					<Link href='/virtual-tours' className='ml-5'>
+						Virtual Tours
+					</Link>
 				</ul>
 			</div>
 		</nav>
