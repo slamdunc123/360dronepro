@@ -22,7 +22,7 @@ const Navbar = () => {
 					>
 						{!isOpen ? <MdOutlineMenu /> : <MdOutlineClose />}
 					</button>
-					<div className='flex justify-between hidden sm:block space-x-4'>
+					<div className='justify-between hidden sm:block space-x-4'>
 						<Link href='/' className='text-white'>
 							Home
 						</Link>
