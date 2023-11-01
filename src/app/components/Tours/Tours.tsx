@@ -5,12 +5,17 @@ import React from 'react';
 
 const Tours = ({ tours }) => {
 	return (
-		<main className='flex flex-col w-full h-[calc(100%-4rem)]'>
+		<main className='flex flex-col w-full h-[calc(100%-4rem)] mt-16'>
+			<article className='container mx-auto px-4 py-2'>
+				<p>
+					Virtual Tours are a great way to enhance a property's appeal
+				</p>
+			</article>
 			{tours &&
 				tours.map((item, index) => {
 					return (
 						<div
-							className={`md:flex ${
+							className={`container mx-auto my-2 px-4 py-2 md:flex ${
 								index % 2 && 'flex-row-reverse'
 							}`}
 							key={item.id}
@@ -31,7 +36,7 @@ const Tours = ({ tours }) => {
 								</Link>
 							</div>
 							<div
-								className={`flex flex-col w-full md:w-1/2 ${
+								className={`flex flex-col w-full md:w-1/2  ${
 									index % 2
 										? 'justify-self-start'
 										: 'justify-self-end'
