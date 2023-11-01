@@ -20,7 +20,7 @@ const Page = async ({ params }: { params: { id: string } }) => {
 	const tour = fetchedTour.data.getTour;
 
 	return (
-		<main className='h-[calc(85%-4rem)] lg:h-[calc(100%-4rem)] w-full mt-16'>
+		<main className='h-[calc(100%-4rem)] w-full mt-16'>
 			{tour ? (
 				<iframe
 					width='100%'
