@@ -5,10 +5,11 @@ import React from 'react';
 
 const Tours = ({ tours }) => {
 	return (
-		<main className='flex flex-col w-full h-[calc(100%-4rem)] mt-16'>
+		<main className='flex flex-col w-full'>
 			<article className='container mx-auto px-4 py-2'>
 				<p>
-					Virtual Tours are a great way to enhance a property&apos;s appeal
+					Virtual Tours are a great way to enhance a property&apos;s
+					appeal
 				</p>
 			</article>
 			{tours &&

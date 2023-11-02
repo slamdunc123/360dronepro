@@ -13,27 +13,42 @@ const Navbar = () => {
 		setIsOpen((prevIsOpen) => !prevIsOpen);
 	};
 	return (
-		<header className='fixed top-0 left-0 h-16 w-full bg-white shadow-sm'>
-			<nav className='container mx-auto h-full px-4 py-2'>
-				<div className='flex justify-between items-center h-full'>
+		<header className='sticky top-0 left-0 w-full'>
+			<nav className='flex items-center justify-between flex-wrap bg-white shadow-md px-4 py-6'>
+				<div className='flex items-center flex-shrink-0 text-sky-700'>
 					<Image
 						src='/360dronepro-logo.svg'
 						alt=''
 						width='256'
 						height='0'
 					/>
-					{/* <div>360dronepro</div> */}
+				</div>
+				<div className='block sm:hidden'>
 					<button
-						className=' sm:hidden text-2xl text-sky-700'
+						className='sm:hidden text-2xl text-sky-700'
 						onClick={handleMenuOnClick}
 					>
 						{!isOpen ? <MdOutlineMenu /> : <MdOutlineClose />}
 					</button>
-					<div className='justify-between hidden sm:block space-x-4'>
-						<Link href='/' className='text-sky-700'>
+				</div>
+				<div
+					className={`${
+						isOpen ? 'block' : 'hidden'
+					} w-full sm:flex sm:items-center sm:w-auto`}
+				>
+					<div className='sm:flex-grow mt-10 sm:mt-0'>
+						<Link
+							href='/'
+							className='block sm:inline-block sm:mr-4 text-sky-700'
+							onClick={handleMenuOnClick}
+						>
 							Home
 						</Link>
-						<Link href='/virtual-tours' className='text-sky-700'>
+						<Link
+							href='/virtual-tours'
+							className='block sm:inline-block text-sky-700'
+							onClick={handleMenuOnClick}
+						>
 							Virtual Tours
 						</Link>
 					</div>
