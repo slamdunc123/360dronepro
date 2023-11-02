@@ -6,7 +6,7 @@ import React from 'react';
 const Tours = ({ tours }) => {
 	return (
 		<main className='flex flex-col w-full'>
-			<article className='px-4 py-2'>
+			<article className='p-4'>
 				<p>
 					Virtual Tours are a great way to enhance a property&apos;s
 					appeal
@@ -16,7 +16,7 @@ const Tours = ({ tours }) => {
 				tours.map((item, index) => {
 					return (
 						<div
-							className={`my-2 px-4 py-2 md:flex ${
+							className={`p-4 md:flex ${
 								index % 2 && 'flex-row-reverse'
 							}`}
 							key={item.id}
@@ -37,7 +37,7 @@ const Tours = ({ tours }) => {
 								</Link>
 							</div>
 							<div
-								className={`flex flex-col w-full md:w-1/2  ${
+								className={`flex flex-col w-full md:w-1/2 ${
 									index % 2
 										? 'justify-self-start'
 										: 'justify-self-end'

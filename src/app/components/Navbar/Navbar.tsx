@@ -8,36 +8,19 @@ import Image from 'next/image';
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
-	const [logoWidth, setLogoWidth] = useState<string>('192');
 
 	const handleMenuOnClick = () => {
 		setIsOpen((prevIsOpen) => !prevIsOpen);
 	};
 
-	const handleResize = () => {
-		if (window.innerWidth >= 640) {
-			setIsOpen(false);
-			setLogoWidth('256');
-		} else {
-			setLogoWidth('192');
-		}
-	};
-
-	useEffect(() => {
-		window.addEventListener('resize', handleResize);
-		return () => {
-			window.removeEventListener('resize', handleResize);
-		};
-	}, []);
-
 	return (
 		<header className='sticky top-0 left-0 w-full'>
-			<nav className='flex items-center justify-between flex-wrap bg-white shadow-md px-4 py-6'>
+			<nav className='flex items-center justify-between flex-wrap bg-white shadow-md p-4'>
 				<div className='flex items-center flex-shrink-0 text-sky-700'>
 					<Image
 						src='/360dronepro-logo.svg'
 						alt=''
-						width={Number(logoWidth)}
+						width={'192'}
 						height='0'
 					/>
 				</div>
