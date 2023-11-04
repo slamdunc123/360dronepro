@@ -20,7 +20,7 @@ const Navbar = () => {
 					<Image
 						src='/360dronepro-logo.svg'
 						alt=''
-						width={'192'}
+						width={'256'}
 						height='0'
 					/>
 				</div>

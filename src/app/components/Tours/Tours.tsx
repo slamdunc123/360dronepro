@@ -77,10 +77,9 @@ const Tours = ({ tours }) => {
 										<div className='self-start mb-2'>
 											{item.name}
 										</div>
-										<div>
-											{toursInfo[index].testimonial} -{' '}
-											{toursInfo[index].owner}
-										</div>
+										<p className='italic'>
+											{`${toursInfo[index].testimonial} - ${toursInfo[index].owner}`}
+										</p>
 									</div>
 								</Link>
 							</div>
