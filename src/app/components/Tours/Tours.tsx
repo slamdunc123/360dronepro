@@ -3,13 +3,40 @@
 import Link from 'next/link';
 import React from 'react';
 
+const toursInfo = [
+	{
+		img: '/rock-cottage.png',
+		testimonial:
+			'...lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptate porro quam quasi voluptas nostrum optio accusamus in eius totam tempora illo itaque, maxime quae, a animi nihil, enim impedit.',
+		owner: 'Denise',
+	},
+	{
+		img: '/hall-cottage.png',
+		testimonial:
+			'...lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptate porro quam quasi voluptas nostrum optio accusamus in eius totam tempora illo itaque, maxime quae, a animi nihil, enim impedit.',
+		owner: 'Susannah',
+	},
+	{
+		img: '/dale-farm.png',
+		testimonial:
+			'...lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptate porro quam quasi voluptas nostrum optio accusamus in eius totam tempora illo itaque, maxime quae, a animi nihil, enim impedit.',
+		owner: 'Duncan',
+	},
+	{
+		img: '/dale-view.png',
+		testimonial:
+			'...lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptate porro quam quasi voluptas nostrum optio accusamus in eius totam tempora illo itaque, maxime quae, a animi nihil, enim impedit.',
+		owner: 'Christine',
+	},
+];
+
 const Tours = ({ tours }) => {
 	return (
 		<main className='flex flex-col w-full'>
 			<article className='p-4'>
 				<p>
-					Virtual Tours are a great way to enhance a property&apos;s
-					appeal
+					Virtual Tours are a great way to showcase your property or
+					business premises.
 				</p>
 			</article>
 			{tours &&
@@ -17,7 +44,9 @@ const Tours = ({ tours }) => {
 					return (
 						<div
 							className={`p-4 md:flex ${
-								index % 2 && 'flex-row-reverse'
+								index % 2
+									? 'flex-row-reverse shadow-sm border-slate-200 border bg-slate-50'
+									: 'shadow-sm border-slate-100 border bg-slate-100'
 							}`}
 							key={item.id}
 						>
@@ -30,7 +59,7 @@ const Tours = ({ tours }) => {
 							>
 								<Link href={`/virtual-tours/${item.id}`}>
 									<img
-										src='https://placehold.co/600x400'
+										src={toursInfo[index].img}
 										className='w-full'
 										alt=''
 									/>
@@ -44,7 +73,15 @@ const Tours = ({ tours }) => {
 								}`}
 							>
 								<Link href={`/virtual-tours/${item.id}`}>
-									<h2>{item.name}</h2>
+									<div className='flex flex-col items-center justify-center px-2'>
+										<div className='self-start mb-2'>
+											{item.name}
+										</div>
+										<div>
+											{toursInfo[index].testimonial} -{' '}
+											{toursInfo[index].owner}
+										</div>
+									</div>
 								</Link>
 							</div>
 						</div>
