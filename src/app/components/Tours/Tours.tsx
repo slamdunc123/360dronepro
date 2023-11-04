@@ -43,7 +43,7 @@ const Tours = ({ tours }) => {
 				tours.map((item, index) => {
 					return (
 						<div
-							className={`p-4 md:flex shadow-md border-slate-200 border m-2 rounded-md ${
+							className={`p-4 md:flex shadow-md border-slate-200 border m-1 rounded-md ${
 								index % 2
 									? 'flex-row-reverse bg-slate-50'
 									: 'bg-slate-100'
