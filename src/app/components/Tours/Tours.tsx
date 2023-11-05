@@ -43,10 +43,10 @@ const Tours = ({ tours }) => {
 				tours.map((item, index) => {
 					return (
 						<div
-							className={`p-4 md:flex shadow-md border-slate-200 border m-1 rounded-md ${
+							className={`p-2 md:flex shadow-md border-slate-200 border m-2 ${
 								index % 2
-									? 'flex-row-reverse bg-slate-50'
-									: 'bg-slate-100'
+									? 'flex-row-reverse bg-slate-100'
+									: 'bg-slate-200'
 							}`}
 							key={item.id}
 						>
@@ -66,14 +66,14 @@ const Tours = ({ tours }) => {
 								</Link>
 							</div>
 							<div
-								className={`flex flex-col w-full md:w-1/2 ${
+								className={`flex flex-col w-full md:w-1/2 lg:mt-6 xl:mt-12 ${
 									index % 2
 										? 'justify-self-start'
 										: 'justify-self-end'
 								}`}
 							>
 								<Link href={`/virtual-tours/${item.id}`}>
-									<div className='flex flex-col items-center justify-center px-2'>
+									<div className='flex flex-col items-center justify-center p-4'>
 										<div className='self-start mb-2'>
 											{item.name}
 										</div>
