@@ -36,34 +36,44 @@ const Tours = ({ tours }) => {
 			<article className='p-4'>
 				<p>
 					Virtual Tours are a great way to showcase your property or
-					business premises.
+					business premises online.
 				</p>
+				<p>
+					They allow the viewer to navigate through a property and
+					view each location with a 360 degrees perspective.
+				</p>
+				<p>
+					360dronepro provide a virtual tour service, where we work
+					closely with our clients to meet their virtual tour needs.
+				</p>
+				<p>To discuss your requirements please contact us on - 07968903859.</p>
 			</article>
 			{tours &&
 				tours.map((item, index) => {
 					return (
 						<div
-							className={`p-2 md:flex shadow-md border-slate-200 border m-2 ${
+							className={`p-2 md:flex shadow-md border-slate-200 border m-2 hover:bg-slate-300 hover:text-black ${
 								index % 2
-									? 'flex-row-reverse bg-slate-100'
-									: 'bg-slate-200'
+									? 'flex-row-reverse bg-slate-100 hover:bg-sky-100'
+									: 'bg-slate-200 '
 							}`}
 							key={item.id}
 						>
 							<div
 								className={`flex flex-col w-full md:w-1/2 ${
-									index % 2
+                  index % 2
 										? 'justify-self-end'
 										: 'justify-self-start'
 								}`}
 							>
-								<Link href={`/virtual-tours/${item.id}`}>
+                  <Link href={`/virtual-tours/${item.id}`}>
 									<img
 										src={toursInfo[index].img}
 										className='w-full'
 										alt=''
 									/>
-								</Link>
+								
+              </Link>
 							</div>
 							<div
 								className={`flex flex-col w-full md:w-1/2 lg:mt-6 xl:mt-12 ${
