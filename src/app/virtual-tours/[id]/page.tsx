@@ -24,7 +24,6 @@ const Page = async ({ params }: { params: { id: string } }) => {
 			{tour ? (
 				<iframe
 					className='w-full h-full'
-					allow='xr-spatial-tracking; gyroscope; accelerometer'
 					src={tour && tour.url}
 				></iframe>
 			) : (

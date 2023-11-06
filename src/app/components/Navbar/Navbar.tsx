@@ -15,7 +15,7 @@ const Navbar = () => {
 
 	return (
 		<header className='sticky top-0 left-0 w-full'>
-			<nav className='flex items-center justify-between flex-wrap bg-white shadow-md p-4'>
+			<nav className='flex items-center justify-between flex-wrap bg-white shadow-md p-2'>
 				<div className='flex items-center flex-shrink-0 text-sky-700'>
 					<Image
 						src='/360dronepro-logo.svg'
@@ -47,7 +47,7 @@ const Navbar = () => {
 						</Link>
 						<Link
 							href='/virtual-tours'
-							className='block sm:inline-block text-sky-700'
+							className='block sm:inline-block sm:mr-4 text-sky-700'
 							onClick={handleMenuOnClick}
 						>
 							Virtual Tours
