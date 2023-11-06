@@ -47,7 +47,7 @@ const Navbar = () => {
 						</Link>
 						<Link
 							href='/virtual-tours'
-							className='block sm:inline-block sm:mr-4 text-sky-700'
+							className='block sm:inline-block text-sky-700'
 							onClick={handleMenuOnClick}
 						>
 							Virtual Tours
