@@ -20,11 +20,10 @@ const Page = async ({ params }: { params: { id: string } }) => {
 	const tour = fetchedTour.data.getTour;
 
 	return (
-		<main className='h-full w-full'>
+		<main className='w-full'>
 			{tour ? (
 				<iframe
-					width='100%'
-					height='100%'
+					className='w-full h-screen'
 					allow='xr-spatial-tracking; gyroscope; accelerometer'
 					src={tour && tour.url}
 				></iframe>
