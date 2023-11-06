@@ -1,5 +1,6 @@
 //@ts-nocheck
 
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -67,10 +68,13 @@ const Tours = ({ tours }) => {
 								}`}
 							>
                   <Link href={`/virtual-tours/${item.id}`}>
-									<img
+									<Image
 										src={toursInfo[index].img}
+                    width='0'
+                    height='0'
 										className='w-full'
-										alt=''
+                    unoptimized
+										alt={toursInfo[index].name}
 									/>
 								
               </Link>
