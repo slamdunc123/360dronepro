@@ -27,7 +27,7 @@ export default function Page() {
 							<h3 className='mb-4 text-lg'>Virtual Tours</h3>
 							<Image
 								src='/360.svg'
-								alt=''
+								alt='360.svg'
 								width='0'
 								height='0'
 								className='w-32'
@@ -46,7 +46,7 @@ export default function Page() {
 							<h3 className='mb-4 text-lg'>Aerial Images</h3>
 							<Image
 								src='/drone.svg'
-								alt=''
+								alt='drone.svg'
 								width='0'
 								height='0'
 								className='w-32'

@@ -19,9 +19,10 @@ const Navbar = () => {
 				<div className='flex items-center flex-shrink-0 text-sky-700'>
 					<Image
 						src='/360dronepro-logo.svg'
-						alt=''
-						width={'256'}
+						alt='360dronepro-logo.svg'
+						width='0'
 						height='0'
+            className='w-64'
 					/>
 				</div>
 				<div className='block sm:hidden'>

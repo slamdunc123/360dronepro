@@ -6,25 +6,25 @@ import React from 'react';
 
 const toursInfo = [
 	{
-		img: '/rock-cottage.png',
+		img: 'rock-cottage.png',
 		testimonial:
-			'...lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptate porro quam quasi voluptas nostrum optio accusamus in eius totam tempora illo itaque, maxime quae, a animi nihil, enim impedit.',
+			'"Absolutely thrilled with the virtual tour of our holiday cottage. It gives a lovely feel of the place. The service was most professional and creative."',
 		owner: 'Denise',
 	},
 	{
-		img: '/hall-cottage.png',
+		img: 'hall-cottage.png',
 		testimonial:
 			'...lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptate porro quam quasi voluptas nostrum optio accusamus in eius totam tempora illo itaque, maxime quae, a animi nihil, enim impedit.',
 		owner: 'Susannah',
 	},
 	{
-		img: '/dale-farm.png',
+		img: 'dale-farm.png',
 		testimonial:
 			'...lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptate porro quam quasi voluptas nostrum optio accusamus in eius totam tempora illo itaque, maxime quae, a animi nihil, enim impedit.',
 		owner: 'Duncan',
 	},
 	{
-		img: '/dale-view.png',
+		img: 'dale-view.png',
 		testimonial:
 			'...lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptate porro quam quasi voluptas nostrum optio accusamus in eius totam tempora illo itaque, maxime quae, a animi nihil, enim impedit.',
 		owner: 'Christine',
@@ -86,12 +86,12 @@ const Tours = ({ tours }) => {
 								>
 									<Link href={`/virtual-tours/${item.id}`}>
 										<Image
-											src={toursInfo[index].img}
+											src={`/${toursInfo[index].img}`}
 											width='0'
 											height='0'
 											className='w-full'
 											unoptimized
-											alt={toursInfo[index].name}
+											alt={toursInfo[index].img}
 										/>
 									</Link>
 								</div>
