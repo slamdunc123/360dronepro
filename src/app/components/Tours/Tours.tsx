@@ -6,7 +6,6 @@ import { ToursPropsType } from '@/app/types';
 import { toursInfo } from './toursInfo';
 
 const Tours = ({ tours }: ToursPropsType) => {
-	console.log('slamdunc ~ file: Tours.tsx:42 ~ Tours ~ tours:', tours);
 	return (
 		<main className='flex flex-col w-full'>
 			<section className='p-4 shadow-sm'>
@@ -40,12 +39,12 @@ const Tours = ({ tours }: ToursPropsType) => {
 					<span className='text-lg text-sky-700'>07968903859</span>.
 				</p>
 			</section>
-			<section className='p-4'>
+			<section className='p-4 space-y-4'>
 				{tours &&
 					tours.map((item, index) => {
 						return (
 							<div
-								className={`md:flex shadow-md border-slate-200 border m-2 hover:bg-slate-300 hover:text-black ${
+								className={`lg:flex shadow-md border-slate-200 border hover:bg-slate-300 hover:text-black ${
 									index % 2
 										? 'flex-row-reverse bg-slate-100 hover:bg-sky-100'
 										: 'bg-slate-200 '
@@ -53,7 +52,7 @@ const Tours = ({ tours }: ToursPropsType) => {
 								key={item?.id}
 							>
 								<div
-									className={`flex flex-col w-full md:w-1/2 ${
+									className={`flex flex-col w-full lg:w-1/2 ${
 										index % 2
 											? 'justify-self-end'
 											: 'justify-self-start'

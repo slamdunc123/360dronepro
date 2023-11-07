@@ -18,11 +18,11 @@ export default function Page() {
 				<h2 className='text-2xl font-bold text-sky-700 my-4'>
 					Services
 				</h2>
-				<div className='flex flex-col sm:flex-row justify-between w-full space-y-8 sm:space-y-0'>
+				<div className='flex flex-col lg:flex-row justify-between w-full space-y-4 sm:space-x-2'>
 					<div className='flex-1 flex justify-center'>
 						<Link
 							href='/virtual-tours'
-							className='flex flex-col items-center border-1 w-11/12 py-4 px-2 shadow-md hover:bg-slate-300 cursor-pointer'
+							className='flex flex-col items-center border-1 w-full py-4 px-2 shadow-md hover:bg-slate-300 cursor-pointer'
 						>
 							<h3 className='mb-4 text-lg'>Virtual Tours</h3>
 							<Image
@@ -41,7 +41,7 @@ export default function Page() {
 					<div className='flex-1 flex justify-center'>
 						<Link
 							href='/aerial-images'
-							className='flex flex-col items-center border-1 w-11/12 py-4 px-2 shadow-md hover:bg-slate-300 cursor-pointer'
+							className='flex flex-col items-center border-1 w-full py-4 px-2 shadow-md hover:bg-slate-300 cursor-pointer'
 						>
 							<h3 className='mb-4 text-lg'>Aerial Images</h3>
 							<Image
