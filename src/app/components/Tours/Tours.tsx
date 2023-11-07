@@ -1,49 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
 
-const toursInfo = [
-	{
-		img: 'rock-cottage.png',
-		testimonial:
-			'"Absolutely thrilled with the virtual tour of our holiday cottage. It gives a lovely feel of the place. The service was most professional and creative."',
-		owner: 'Denise',
-	},
-	{
-		img: 'hall-cottage.png',
-		// testimonial:
-		// 	'...lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptate porro quam quasi voluptas nostrum optio accusamus in eius totam tempora illo itaque, maxime quae, a animi nihil, enim impedit.',
-		// owner: 'Susannah',
-	},
-	{
-		img: 'dale-farm.png',
-		// testimonial:
-		// 	'...lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptate porro quam quasi voluptas nostrum optio accusamus in eius totam tempora illo itaque, maxime quae, a animi nihil, enim impedit.',
-		// owner: 'Duncan',
-	},
-	{
-		img: 'dale-view.png',
-		// testimonial:
-		// 	'...lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum voluptate porro quam quasi voluptas nostrum optio accusamus in eius totam tempora illo itaque, maxime quae, a animi nihil, enim impedit.',
-		// owner: 'Christine',
-	},
-];
+import { ToursPropsType } from '@/app/types';
 
-type ToursPropsType = {
-	tours: TourType[] | null | undefined;
-};
-
-type TourType = {
-	__typename: 'Tour';
-	id: string;
-	name: string;
-	caption?: string | null | undefined;
-	description?: string | null | undefined;
-	url: string;
-	category: string;
-	createdAt: string;
-	updatedAt: string;
-} | null;
+import { toursInfo } from './toursInfo';
 
 const Tours = ({ tours }: ToursPropsType) => {
 	console.log('slamdunc ~ file: Tours.tsx:42 ~ Tours ~ tours:', tours);
