@@ -1,5 +1,3 @@
-//@ts-nocheck
-
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -31,7 +29,24 @@ const toursInfo = [
 	},
 ];
 
-const Tours = ({ tours }) => {
+type ToursPropsType = {
+	tours: TourType[] | null | undefined;
+};
+
+type TourType = {
+	__typename: 'Tour';
+	id: string;
+	name: string;
+	caption?: string | null | undefined;
+	description?: string | null | undefined;
+	url: string;
+	category: string;
+	createdAt: string;
+	updatedAt: string;
+} | null;
+
+const Tours = ({ tours }: ToursPropsType) => {
+	console.log('slamdunc ~ file: Tours.tsx:42 ~ Tours ~ tours:', tours);
 	return (
 		<main className='flex flex-col w-full'>
 			<section className='p-4 shadow-sm'>
@@ -75,7 +90,7 @@ const Tours = ({ tours }) => {
 										? 'flex-row-reverse bg-slate-100 hover:bg-sky-100'
 										: 'bg-slate-200 '
 								}`}
-								key={item.id}
+								key={item?.id}
 							>
 								<div
 									className={`flex flex-col w-full md:w-1/2 ${
@@ -84,7 +99,7 @@ const Tours = ({ tours }) => {
 											: 'justify-self-start'
 									}`}
 								>
-									<Link href={`/virtual-tours/${item.id}`}>
+									<Link href={`/virtual-tours/${item?.id}`}>
 										<Image
 											src={`/${toursInfo[index].img}`}
 											width='0'
@@ -102,13 +117,16 @@ const Tours = ({ tours }) => {
 											: 'justify-self-end'
 									}`}
 								>
-									<Link href={`/virtual-tours/${item.id}`}>
+									<Link href={`/virtual-tours/${item?.id}`}>
 										<div className='flex flex-col items-center justify-center p-4'>
 											<div className='self-start mb-2'>
-												{item.name}
+												{item?.name}
 											</div>
 											<p className='italic'>
-												{toursInfo[index].testimonial && toursInfo[index].owner ? `${toursInfo[index].testimonial} - ${toursInfo[index].owner}` : null}
+												{toursInfo[index].testimonial &&
+												toursInfo[index].owner
+													? `${toursInfo[index].testimonial} - ${toursInfo[index].owner}`
+													: null}
 											</p>
 										</div>
 									</Link>
