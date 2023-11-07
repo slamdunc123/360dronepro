@@ -35,19 +35,36 @@ const Tours = ({ tours }) => {
 	return (
 		<main className='flex flex-col w-full'>
 			<article className='p-4'>
-				<p>
-					Virtual Tours are a great way to showcase your property or
-					business premises online.
+				<h2 className='text-4xl font-bold text-sky-700 my-4'>
+					Virtual Tours
+				</h2>
+				<p className='mb-2'>
+					Showcase your property or business premises online using the
+					latest virtual tour software.
 				</p>
-				<p>
-					They allow the viewer to navigate through a property and
-					view each location with a 360 degrees perspective.
+				<p className='mb-2'>
+					Enable viewers to navigate and view each location in a 360
+					degrees perspective.
 				</p>
-				<p>
+				<p className='mb-2'>
+					Check out some of our client virtual tours below and see what they have to say.
+				</p>
+			</article>
+			<article className='p-4'>
+				<h2 className='text-2xl font-bold text-sky-700 my-4'>
+					Contact Us
+				</h2>
+				<p className='mb-2'>
 					360dronepro provide a virtual tour service, where we work
-					closely with our clients to meet their virtual tour needs.
+					closely with our clients to meet their individual, virtual
+					tour needs.
 				</p>
-				<p>To discuss your requirements please contact us on - 07968903859.</p>
+				<p className='mb-2'>
+					To discuss your requirements please contact us on -{' '}
+					<span className='text-lg text-sky-700'>
+						07968903859
+					</span>.
+				</p>
 			</article>
 			{tours &&
 				tours.map((item, index) => {
@@ -62,22 +79,21 @@ const Tours = ({ tours }) => {
 						>
 							<div
 								className={`flex flex-col w-full md:w-1/2 ${
-                  index % 2
+									index % 2
 										? 'justify-self-end'
 										: 'justify-self-start'
 								}`}
 							>
-                  <Link href={`/virtual-tours/${item.id}`}>
+								<Link href={`/virtual-tours/${item.id}`}>
 									<Image
 										src={toursInfo[index].img}
-                    width='0'
-                    height='0'
+										width='0'
+										height='0'
 										className='w-full'
-                    unoptimized
+										unoptimized
 										alt={toursInfo[index].name}
 									/>
-								
-              </Link>
+								</Link>
 							</div>
 							<div
 								className={`flex flex-col w-full md:w-1/2 lg:mt-6 xl:mt-12 ${
