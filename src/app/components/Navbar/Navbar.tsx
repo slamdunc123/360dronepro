@@ -37,20 +37,27 @@ const Navbar = () => {
 						isOpen ? 'block' : 'hidden'
 					} w-full sm:flex sm:items-center sm:w-auto`}
 				>
-					<div className='sm:flex-grow mt-10 sm:mt-0'>
+					<div className='sm:flex-grow flex flex-col sm:flex-row mt-10 sm:mt-0'>
 						<Link
 							href='/'
-							className='block sm:inline-block sm:mr-4 text-sky-700'
+							className='sm:mr-4 text-sky-700'
 							onClick={handleMenuOnClick}
 						>
 							Home
 						</Link>
 						<Link
 							href='/virtual-tours'
-							className='block sm:inline-block text-sky-700'
+							className='sm:mr-4 text-sky-700'
 							onClick={handleMenuOnClick}
 						>
 							Virtual Tours
+						</Link>
+						<Link
+							href='/aerial-images'
+							className='text-sky-700'
+							onClick={handleMenuOnClick}
+						>
+							Aerial Images
 						</Link>
 					</div>
 				</div>
