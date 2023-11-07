@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Page = () => {
 	return (
 		<main className='flex flex-col w-full'>
@@ -8,7 +6,8 @@ const Page = () => {
 					Aerial Images
 				</h2>
 				<p className='mb-2'>
-					Capture your property or business premises from a unique aerial perspective using drone photography.
+					Capture your property or business premises from a unique
+					aerial perspective using drone photography.
 				</p>
 				<p className='mb-2'>
 					Add aerial images to your property portfolio.
@@ -24,7 +23,8 @@ const Page = () => {
 				</h2>
 				<p className='mb-2'>
 					360dronepro provide an aerial image service, where we work
-					closely with our clients to meet their individual, aerial image needs.
+					closely with our clients to meet their individual, aerial
+					image needs.
 				</p>
 				<p className='mb-2'>
 					To discuss your requirements please contact us on -{' '}

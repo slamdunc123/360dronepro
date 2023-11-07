@@ -2,11 +2,13 @@ import React from 'react';
 import { Amplify, API } from 'aws-amplify';
 import { GraphQLQuery } from '@aws-amplify/api';
 import { ListToursQuery } from '../../API';
-import awsExports from '@/aws-exports';
 import { listTours } from '../../graphql/queries';
 
-Amplify.configure({ ...awsExports, ssr: true });
 import Tours from '../components/Tours/Tours';
+
+import awsExports from '@/aws-exports';
+Amplify.configure({ ...awsExports, ssr: true });
+
 
 const fetchTours = async () => {
 	const tours = await API.graphql<GraphQLQuery<ListToursQuery>>({

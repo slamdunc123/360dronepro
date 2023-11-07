@@ -1,13 +1,13 @@
-//@ts-nocheck
+import { Amplify, API } from 'aws-amplify';
+import { GraphQLQuery } from '@aws-amplify/api';
+import { GetTourQuery } from '../../../API';
+import { getTour } from '../../../graphql/queries';
 
-import { Amplify, API, graphqlOperation } from 'aws-amplify';
 import awsExports from '@/aws-exports';
 Amplify.configure({ ...awsExports, ssr: true });
 
-import { getTour } from '../../../graphql/queries';
-
-const fetchTour = async (id) => {
-	const tour = await API.graphql({
+const fetchTour = async (id: string) => {
+	const tour = await API.graphql<GraphQLQuery<GetTourQuery>>({
 		query: getTour,
 		variables: { id: id },
 	});
@@ -17,7 +17,7 @@ const fetchTour = async (id) => {
 
 const Page = async ({ params }: { params: { id: string } }) => {
 	const fetchedTour = await fetchTour(params.id);
-	const tour = fetchedTour.data.getTour;
+	const tour = fetchedTour.data?.getTour;
 
 	return (
 		<main className='w-full h-full'>

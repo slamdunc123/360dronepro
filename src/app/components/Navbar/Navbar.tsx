@@ -1,10 +1,11 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
+
 import { MdOutlineMenu } from 'react-icons/md';
 import { MdOutlineClose } from 'react-icons/md';
-import Image from 'next/image';
 
 const Navbar = () => {
 	const [isOpen, setIsOpen] = useState<boolean>(false);
