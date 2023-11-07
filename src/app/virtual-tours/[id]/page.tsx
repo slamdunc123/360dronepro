@@ -23,9 +23,7 @@ const Page = async ({ params }: { params: { id: string } }) => {
 		<main className='w-full h-full'>
 			{tour ? (
 				<iframe
-					width='100%'
-					height='100%'
-					// className='w-full h-full'
+					className='w-full h-full'
 					src={tour && tour.url}
 				></iframe>
 			) : (
