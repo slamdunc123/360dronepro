@@ -2,7 +2,7 @@ import { aerialsInfo } from './aerialsInfo';
 
 const Aerials = () => {
 	return (
-		<div className='flex flex-col md:flex-row w-full justify-center md:space-x-2 space-y-2 md:space-y-0'>
+		<div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-4'>
 			{aerialsInfo &&
 				aerialsInfo.map((item, index) => (
 					<div key={index} className='w-full'>
