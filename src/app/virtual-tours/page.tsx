@@ -53,7 +53,7 @@ const Page = async () => {
 				</p>
 			</section>
 			<section className='p-4 space-y-4'>
-				<Tours tours={tours} />;
+				<Tours tours={tours} />
 			</section>
 		</main>
 	);
