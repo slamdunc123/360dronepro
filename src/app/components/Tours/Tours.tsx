@@ -10,7 +10,7 @@ const Tours = ({ tours }: ToursPropsType) => {
 		tours &&
 		tours.map((item, index) => (
 			<div
-				className={`lg:flex shadow-md border-slate-200 border hover:bg-slate-300 hover:text-black ${
+				className={`md:flex shadow-md border-slate-200 border hover:bg-slate-300 hover:text-black ${
 					index % 2
 						? 'flex-row-reverse bg-slate-100 hover:bg-sky-100'
 						: 'bg-slate-200 '
@@ -18,7 +18,7 @@ const Tours = ({ tours }: ToursPropsType) => {
 				key={item?.id}
 			>
 				<div
-					className={`flex flex-col w-full lg:w-1/2 ${
+					className={`flex flex-col w-full md:w-1/2 ${
 						index % 2 ? 'justify-self-end' : 'justify-self-start'
 					}`}
 				>
