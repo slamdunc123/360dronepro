@@ -1,3 +1,5 @@
+import Aerials from '../components/Aerials/Aerials';
+
 const Page = () => {
 	return (
 		<main className='flex flex-col w-full'>
@@ -31,6 +33,9 @@ const Page = () => {
 					<span className='text-lg text-sky-700'>07968903859</span>.
 				</p>
 			</section>
+      <section className='p-4 shadow-sm'>
+        <Aerials />
+      </section>
 		</main>
 	);
 };

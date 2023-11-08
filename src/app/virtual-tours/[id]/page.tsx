@@ -25,6 +25,7 @@ const Page = async ({ params }: { params: { id: string } }) => {
 				<iframe
 					className='w-full h-full'
 					src={tour && tour.url}
+          allow='xr-spatial-tracking; gyroscope; accelerometer'
 				></iframe>
 			) : (
 				'No tour found'
