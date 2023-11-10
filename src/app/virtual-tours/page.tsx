@@ -30,7 +30,7 @@ const Page = async () => {
 					latest virtual tour software.
 				</p>
 				<p className='mb-2'>
-					Enable viewers to navigate and view each location in a 360
+					Enable viewers to navigate and view each location from a 360
 					degrees perspective.
 				</p>
 				<p className='mb-2'>
