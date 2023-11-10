@@ -8,7 +8,7 @@ export const toursInfo = [
 	{
 		img: 'hall-cottage.png',
 		testimonial:
-			'"Really please with the service we received and I couldn\'t be happier with the virtual tour. It feels like you\'re actually at the cottage."',
+			'"Really pleased with the service we received and I couldn\'t be happier with the virtual tour. It feels like you\'re actually at the cottage."',
 		owner: 'Susannah',
 	},
 	{
