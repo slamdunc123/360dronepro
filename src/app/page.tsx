@@ -18,7 +18,7 @@ export default function Page() {
 				<h2 className='text-2xl font-bold text-sky-700 my-4'>
 					Services
 				</h2>
-				<div className='flex flex-col lg:flex-row justify-between w-full space-y-4 sm:space-x-2'>
+				<div className='flex flex-col lg:flex-row justify-between w-full gap-y-4 sm:gap-x-2'>
 					<div className='flex-1 flex justify-center'>
 						<Link
 							href='/virtual-tours'
