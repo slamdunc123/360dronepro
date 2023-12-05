@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Modal from '../Modal/Modal';
 import { aerialsInfo } from './aerialsInfo';
+import Image from 'next/image';
 
 const Aerials = () => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -48,14 +49,15 @@ const Aerials = () => {
 			<div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-4'>
 				{aerialsInfo &&
 					aerialsInfo.map((item, index) => (
-						<div key={index} className='w-full'>
-							<img
-								src={item.url}
+						<div key={index} className='w-full shadow-sm'>
+							<Image
+								src={`/${item.img}`}
 								alt={item.img}
-								// width='0'
-								// height='0'
+								width='0'
+								height='0'
 								className='w-full cursor-pointer'
 								onClick={() => handleImageOnClick(item, index)}
+								unoptimized
 							/>
 						</div>
 					))}

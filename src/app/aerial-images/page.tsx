@@ -15,8 +15,7 @@ const Page = () => {
 					Add aerial images to your property portfolio.
 				</p>
 				<p className='mb-2'>
-					Check out some of our aerial images below and see what our
-					clients have to say.
+					Check out some of our aerial images below.
 				</p>
 			</section>
 			<section className='p-4 shadow-sm'>

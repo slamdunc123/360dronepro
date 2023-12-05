@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const Modal = ({
 	setIsModalOpen,
 	activeImage,
@@ -11,11 +13,11 @@ const Modal = ({
 			role='dialog'
 			aria-modal='true'
 		>
-			<div className='fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity'></div>
+			<div className='fixed inset-0 bg-black bg-opacity-80 transition-opacity'></div>
 
 			<div className='fixed inset-0 z-10 w-screen overflow-y-auto'>
 				<div className='flex min-h-full w-full items-center justify-center p-4 text-center '>
-					<div className='text-white text-right w-full lg:w-3/4 xl:w-2/3 cursor-pointer relative '>
+					<div className='text-white text-right w-full lg:w-3/4 xl:w-2/3 relative'>
 						<button
 							type='button'
 							onClick={() =>
@@ -27,10 +29,13 @@ const Modal = ({
 						>
 							X
 						</button>
-						<img
-							src={activeImage.url}
-							alt=''
-							className='w-full cursor-pointer'
+						<Image
+							src={activeImage.img}
+							alt={activeImage.img}
+							width='0'
+							height='0'
+							className='w-full'
+							unoptimized
 						/>
 						<div className='absolute top-[50%] left-0 text-white p-2'>
 							<button onClick={handlePrevOnClick}>prev</button>
