@@ -5,8 +5,8 @@ import { ToursPropsType } from '@/app/types';
 
 import { toursInfo } from './toursInfo';
 
+//TODO: add toursInfo data to tours database to ensure one source of data, add fields and include a featured boolean field
 const Tours = ({ tours }: ToursPropsType) => {
-	console.log('slamdunc ~ file: Tours.tsx:9 ~ Tours ~ tours:', tours);
 	return toursInfo.map((item, index) => (
 		<div
 			className={`md:flex shadow-md border-slate-200 border hover:bg-slate-300 hover:text-black ${
