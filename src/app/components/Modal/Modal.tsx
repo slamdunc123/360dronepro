@@ -19,7 +19,7 @@ const Modal = ({
 
 			<div className='fixed inset-0 z-10 w-screen overflow-y-auto'>
 				<div className='flex min-h-full w-full items-center justify-center p-4 text-center'>
-					<div className='text-right w-full lg:w-3/4 xl:w-2/3 relative'>
+					<div className='text-right w-full md:w-3/4 xl:w-2/3 relative'>
 						<button
 							type='button'
 							onClick={() =>
@@ -29,7 +29,7 @@ const Modal = ({
 							}
 							className=' '
 						>
-							<XMarkIcon className='h-8 w-8 text-black' />
+							<XMarkIcon className='h-6 w-6 text-black' />
 						</button>
 						<Image
 							src={activeImage.img}
