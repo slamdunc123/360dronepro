@@ -1,16 +1,19 @@
-//@ts-nocheck
 'use client';
 import { useState } from 'react';
 import Modal from '../Modal/Modal';
 import { aerialsInfo } from './aerialsInfo';
 import Image from 'next/image';
+import { AerialType } from '@/app/types';
 
 const Aerials = () => {
-	const [isModalOpen, setIsModalOpen] = useState(false);
-	const [activeImage, setActiveImage] = useState('');
+	const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+	const [activeImage, setActiveImage] = useState<AerialType>({
+		img: '',
+		url: '',
+	});
 	const [activeImageIndex, setActiveImageIndex] = useState(0);
 
-	const handleImageOnClick = (item: any, index: any) => {
+	const handleImageOnClick = (item: AerialType, index: number) => {
 		setIsModalOpen((prevIsModalOpen) => !prevIsModalOpen);
 		setActiveImage(item);
 		setActiveImageIndex(index);

@@ -13,3 +13,8 @@ type TourType = {
 	createdAt: string;
 	updatedAt: string;
 } | null;
+
+export type AerialType = {
+	img: string;
+	url: string;
+};

@@ -1,13 +1,22 @@
+import { Dispatch, SetStateAction } from 'react';
 import Image from 'next/image';
 import { XMarkIcon } from '@heroicons/react/24/solid';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
+import { AerialType } from '@/app/types';
+
+type ModalPropsType = {
+	setIsModalOpen: Dispatch<SetStateAction<boolean>>;
+	activeImage: AerialType;
+	handlePrevOnClick: () => void;
+	handleNextOnClick: () => void;
+};
 
 const Modal = ({
 	setIsModalOpen,
 	activeImage,
 	handlePrevOnClick,
 	handleNextOnClick,
-}: any) => {
+}: ModalPropsType) => {
 	return (
 		<div
 			className='z-10'
@@ -22,11 +31,7 @@ const Modal = ({
 					<div className='text-right w-full md:w-3/4 xl:w-2/3 relative'>
 						<button
 							type='button'
-							onClick={() =>
-								setIsModalOpen(
-									(prevIsModalOpen: any) => !prevIsModalOpen
-								)
-							}
+							onClick={() => setIsModalOpen(false)}
 							className=' '
 						>
 							<XMarkIcon className='h-6 w-6 text-black' />
