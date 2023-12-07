@@ -3,7 +3,6 @@ import React from 'react';
 const Footer = () => {
 	return (
 		<footer className='bg-sky-700 mt-auto flex justify-between py-4 px-2'>
-			<h1>hello</h1>
 			<div className='text-white text-xs lg:text-sm'>
 				<p>© 2023 Copyright - 360dronepro.co.uk</p>
 			</div>
