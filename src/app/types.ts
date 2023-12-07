@@ -15,6 +15,7 @@ type TourType = {
 } | null;
 
 export type AerialType = {
-	img: string;
+	imgSmall: string;
+	imgLarge: string;
 	url: string;
 };

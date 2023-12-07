@@ -37,11 +37,10 @@ const Modal = ({
 							<XMarkIcon className='h-6 w-6 text-black' />
 						</button>
 						<Image
-							src={activeImage.img}
-							alt={activeImage.img}
-							width='0'
-							height='0'
-							className='w-full'
+							src={activeImage.imgLarge}
+							alt={activeImage.imgLarge}
+							width={1280}
+							height={720}
 							unoptimized
 						/>
 						<div className='absolute top-[50%] left-0 p-2'>

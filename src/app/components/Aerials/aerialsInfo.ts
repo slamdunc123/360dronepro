@@ -1,38 +1,47 @@
 export const aerialsInfo = [
 	{
-		img: 'dale-farm-drone.jpg',
+		imgSmall: 'dale-farm-drone-640x360.jpg',
+		imgLarge: 'dale-farm-drone-1280x720.jpg',
 		url: 'https://placehold.co/600x400?text=image1',
 	},
 	{
-		img: 'dale-farm-drone2.jpg',
+		imgSmall: 'dale-farm-drone2-640x360.jpg',
+		imgLarge: 'dale-farm-drone2-1280x720.jpg',
 		url: 'https://placehold.co/600x400?text=image2',
 	},
 	{
-		img: 'dale-farm-drone3.jpg',
+		imgSmall: 'dale-farm-drone3-640x360.jpg',
+		imgLarge: 'dale-farm-drone3-1280x720.jpg',
 		url: 'https://placehold.co/600x400?text=image3',
 	},
 	{
-		img: 'dale-view-drone.jpg',
+		imgSmall: 'dale-view-drone-640x360.jpg',
+		imgLarge: 'dale-view-drone-1280x720.jpg',
 		url: 'https://placehold.co/600x400?text=image4',
 	},
 	{
-		img: 'dale-view-drone2.jpg',
+		imgSmall: 'dale-view-drone2-640x360.jpg',
+		imgLarge: 'dale-view-drone2-1280x720.jpg',
 		url: 'https://placehold.co/600x400?text=image5',
 	},
 	{
-		img: 'dale-view-drone3.jpg',
+		imgSmall: 'dale-view-drone3-640x360.jpg',
+		imgLarge: 'dale-view-drone3-1280x720.jpg',
 		url: 'https://placehold.co/600x400?text=image6',
 	},
 	{
-		img: 'rock-cottage-drone.jpg',
+		imgSmall: 'rock-cottage-drone-640x360.jpg',
+		imgLarge: 'rock-cottage-drone-1280x720.jpg',
 		url: 'https://placehold.co/600x400?text=image7',
 	},
 	{
-		img: 'rock-cottage-drone2.jpg',
+		imgSmall: 'rock-cottage-drone2-640x360.jpg',
+		imgLarge: 'rock-cottage-drone2-1280x720.jpg',
 		url: 'https://placehold.co/600x400?text=image8',
 	},
 	{
-		img: 'rock-cottage-drone3.jpg',
+		imgSmall: 'rock-cottage-drone3-640x360.jpg',
+		imgLarge: 'rock-cottage-drone3-1280x720.jpg',
 		url: 'https://placehold.co/600x400?text=image9',
 	},
 ];
