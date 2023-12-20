@@ -23,7 +23,7 @@ const Navbar = () => {
 						alt='360dronepro-logo.svg'
 						width='0'
 						height='0'
-            className='w-64'
+						className='w-64'
 					/>
 				</div>
 				<div className='block sm:hidden'>
