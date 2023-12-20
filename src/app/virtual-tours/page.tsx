@@ -21,8 +21,8 @@ const Page = async () => {
 	const tours = fetchedTours.data?.listTours?.items;
 	return (
 		<main className='flex flex-col w-full'>
-			<section className='p-4 shadow-sm'>
-				<h2 className='text-4xl font-bold text-sky-700 my-4'>
+			<section className='p-4 shadow-sm text-sky-700'>
+				<h2 className='text-4xl font-bold  my-4'>
 					Virtual Tours
 				</h2>
 				<p className='mb-2'>
@@ -38,8 +38,8 @@ const Page = async () => {
 					clients have to say.
 				</p>
 			</section>
-			<section className='p-4 shadow-sm'>
-				<h2 className='text-2xl font-bold text-sky-700 my-4'>
+			<section className='p-4 shadow-sm text-sky-700'>
+				<h2 className='text-2xl font-bold my-4'>
 					Contact Us
 				</h2>
 				<p className='mb-2'>

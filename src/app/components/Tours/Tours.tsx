@@ -38,7 +38,7 @@ const Tours = ({ tours }: ToursPropsType) => {
 				}`}
 			>
 				<Link href={`/virtual-tours/${item?.id}`}>
-					<div className='flex flex-col items-center justify-center p-4'>
+					<div className='flex flex-col items-center justify-center p-4 text-sky-700'>
 						<div className='self-start mb-2'>{item.name}</div>
 						<p className='italic'>
 							{item.testimonial && item.owner
