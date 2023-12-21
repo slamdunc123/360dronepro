@@ -32,9 +32,9 @@ const Page = () => {
 					<span className='text-lg text-sky-700'>07968903859</span>.
 				</p>
 			</section>
-      <section className='p-4 shadow-sm'>
-        <Aerials />
-      </section>
+			<section className='p-4 shadow-sm'>
+				<Aerials />
+			</section>
 		</main>
 	);
 };

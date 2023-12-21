@@ -42,24 +42,31 @@ const Navbar = () => {
 					<div className='sm:flex-grow flex flex-col sm:flex-row mt-10 sm:mt-0'>
 						<Link
 							href='/'
-							className='sm:mr-4 text-sky-700'
+							className='sm:mr-4 text-sky-700 hover:text-sky-300'
 							onClick={handleMenuOnClick}
 						>
 							Home
 						</Link>
 						<Link
 							href='/virtual-tours'
-							className='sm:mr-4 text-sky-700'
+							className='sm:mr-4 text-sky-700 hover:text-sky-300'
 							onClick={handleMenuOnClick}
 						>
 							Virtual Tours
 						</Link>
 						<Link
 							href='/aerial-images'
-							className='text-sky-700'
+							className='sm:mr-4 text-sky-700 hover:text-sky-300'
 							onClick={handleMenuOnClick}
 						>
 							Aerial Images
+						</Link>
+						<Link
+							href='/drone-inspections'
+							className='text-sky-700 hover:text-sky-300'
+							onClick={handleMenuOnClick}
+						>
+							Drone Inspections
 						</Link>
 					</div>
 				</div>

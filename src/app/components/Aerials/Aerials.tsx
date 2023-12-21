@@ -8,7 +8,7 @@ import { AerialType } from '@/app/types';
 const Aerials = () => {
 	const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 	const [activeImage, setActiveImage] = useState<AerialType>({
-		imgSmall: '',
+	    imgSmall: '',
 		imgLarge: '',
 		url: '',
 	});
