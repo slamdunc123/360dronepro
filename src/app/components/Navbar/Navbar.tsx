@@ -61,13 +61,13 @@ const Navbar = () => {
 						>
 							Aerial Images
 						</Link>
-						<Link
+						{/* <Link
 							href='/drone-inspections'
 							className='text-sky-700 hover:text-sky-300'
 							onClick={handleMenuOnClick}
 						>
 							Drone Inspections
-						</Link>
+						</Link> */}
 					</div>
 				</div>
 			</nav>
