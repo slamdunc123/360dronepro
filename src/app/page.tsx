@@ -1,22 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Page() {
+const Home = () => {
 	return (
 		<main className='flex flex-col w-full'>
 			<section className='p-4 shadow-sm text-sky-700'>
-				<h2 className='text-4xl font-bold my-4'>
-					360dronepro
-				</h2>
+				<h2 className='text-4xl font-bold my-4'>360dronepro</h2>
 				<p className='mb-2'>
 					At 360dronepro we use 360 camera and drone technology to
 					provide virtual tour and aerial image services for our
 					clients.
 				</p>
 			</section>
-				<h2 className='text-2xl font-bold my-4 text-sky-700'>
-					Services
-				</h2>
+			<h2 className='text-2xl font-bold my-4 text-sky-700'>Services</h2>
 			<section className='p-4 shadow-sm text-sky-700 flex justify-center'>
 				<div className='flex flex-col w-full items-center gap-y-4 sm:gap-x-2'>
 					<div className='flex-1 flex justify-center w-full'>
@@ -74,4 +70,6 @@ export default function Page() {
 			</section>
 		</main>
 	);
-}
+};
+
+export default Home;

@@ -16,15 +16,13 @@ const fetchTours = async () => {
 	return tours;
 };
 
-const Page = async () => {
+const VirtualTours = async () => {
 	const fetchedTours = await fetchTours();
 	const tours = fetchedTours.data?.listTours?.items;
 	return (
 		<main className='flex flex-col w-full'>
 			<section className='p-4 shadow-sm text-sky-700'>
-				<h2 className='text-4xl font-bold  my-4'>
-					Virtual Tours
-				</h2>
+				<h2 className='text-4xl font-bold  my-4'>Virtual Tours</h2>
 				<p className='mb-2'>
 					Showcase your property or business premises online using the
 					latest virtual tour software.
@@ -39,9 +37,7 @@ const Page = async () => {
 				</p>
 			</section>
 			<section className='p-4 shadow-sm text-sky-700'>
-				<h2 className='text-2xl font-bold my-4'>
-					Contact Us
-				</h2>
+				<h2 className='text-2xl font-bold my-4'>Contact Us</h2>
 				<p className='mb-2'>
 					360dronepro provide a virtual tour service, where we work
 					closely with our clients to meet their individual, virtual
@@ -59,4 +55,4 @@ const Page = async () => {
 	);
 };
 
-export default Page;
+export default VirtualTours;

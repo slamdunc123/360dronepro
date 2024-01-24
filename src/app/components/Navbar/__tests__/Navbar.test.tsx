@@ -3,27 +3,34 @@ import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import Navbar from '../Navbar';
 
-it('renders the Navbar component with banner element', () => {
-	render(<Navbar />);
-	const bannerElement = screen.getByRole('banner');
-	expect(bannerElement).toBeInTheDocument();
-});
-describe('tests for navigation links', () => {
-	it('renders correct number of links', () => {
+describe('Navbar', () => {
+	it('should render the banner element', () => {
+		render(<Navbar />);
+		const bannerElement = screen.getByRole('banner');
+		expect(bannerElement).toBeInTheDocument();
+	});
+	it('should render the image element', () => {
+		render(<Navbar />);
+		const imageElement = screen.getByRole('img', {name: '360dronepro-logo.svg'});
+		expect(imageElement).toBeInTheDocument();
+	});
+
+	it('should render correct number of links', () => {
 		render(<Navbar />);
 		const linkElements = screen.getAllByRole('link');
 		expect(linkElements).toHaveLength(3);
 	});
-	it('renders the Navbar component with link element', () => {
+
+	it('should render link element with correct route path', () => {
 		render(<Navbar />);
 		const linkElement = screen.getByRole('link', { name: 'Home' });
 		expect(linkElement).toBeInTheDocument();
-    expect(linkElement).toHaveAttribute('href', '/')
+		expect(linkElement).toHaveAttribute('href', '/');
 	});
-});
 
-it('renders the Navbar component with button element', () => {
-	render(<Navbar />);
-	const buttonElement = screen.getByRole('button');
-	expect(buttonElement).toBeInTheDocument();
+	it('should render button element', () => {
+		render(<Navbar />);
+		const buttonElement = screen.getByRole('button');
+		expect(buttonElement).toBeInTheDocument();
+	});
 });

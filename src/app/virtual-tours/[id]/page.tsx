@@ -15,7 +15,7 @@ const fetchTour = async (id: string) => {
 	return tour;
 };
 
-const Page = async ({ params }: { params: { id: string } }) => {
+const VirtualTour = async ({ params }: { params: { id: string } }) => {
 	const fetchedTour = await fetchTour(params.id);
 	const tour = fetchedTour.data?.getTour;
 
@@ -34,4 +34,4 @@ const Page = async ({ params }: { params: { id: string } }) => {
 	);
 };
 
-export default Page;
+export default VirtualTour;

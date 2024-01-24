@@ -1,6 +1,6 @@
 import Aerials from '../components/Aerials/Aerials';
 
-const Page = () => {
+const AerialImages = () => {
 	return (
 		<main className='flex flex-col w-full'>
 			<section className='p-4 shadow-sm text-sky-700'>
@@ -39,4 +39,4 @@ const Page = () => {
 	);
 };
 
-export default Page;
+export default AerialImages;
