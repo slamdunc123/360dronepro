@@ -54,7 +54,7 @@ export default function Page() {
 							<p>Get a bird&apos;s eye view with aerial images</p>
 						</Link>
 					</div>
-					<div className='flex-1 flex justify-center w-full'>
+					{/* <div className='flex-1 flex justify-center w-full'>
 						<Link
 							href='/drone-inspections'
 							className='flex flex-col items-center border-1 w-full py-4 px-2 shadow-md hover:bg-slate-300 cursor-pointer'
@@ -69,7 +69,7 @@ export default function Page() {
 							/>
 							<p>Check for any roofing issues with a drone inspection</p>
 						</Link>
-					</div>
+					</div> */}
 				</div>
 			</section>
 		</main>
