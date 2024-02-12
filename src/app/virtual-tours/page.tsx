@@ -22,7 +22,7 @@ const VirtualTours = async () => {
 	return (
 		<main className='flex flex-col w-full'>
 			<section className='p-4 shadow-sm text-sky-700'>
-				<h2 className='text-4xl font-bold  my-4'>Virtual Tours</h2>
+				<h1 className='text-4xl font-bold  my-4'>Virtual Tours</h1>
 				<p className='mb-2'>
 					Showcase your property or business premises online using the
 					latest virtual tour software.

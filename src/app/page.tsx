@@ -5,7 +5,7 @@ const Home = () => {
 	return (
 		<main className='flex flex-col w-full'>
 			<section className='p-4 shadow-sm text-sky-700'>
-				<h2 className='text-4xl font-bold my-4'>360dronepro</h2>
+				<h1 className='text-4xl font-bold my-4'>360dronepro</h1>
 				<p className='mb-2'>
 					At 360dronepro we use 360 camera and drone technology to
 					provide virtual tour and aerial image services for our

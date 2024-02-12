@@ -4,9 +4,9 @@ const AerialImages = () => {
 	return (
 		<main className='flex flex-col w-full'>
 			<section className='p-4 shadow-sm text-sky-700'>
-				<h2 className='text-4xl font-bold my-4'>
+				<h1 className='text-4xl font-bold my-4'>
 					Aerial Images
-				</h2>
+				</h1>
 				<p className='mb-2'>
 					Capture your property or business premises from a unique
 					aerial perspective using drone photography.

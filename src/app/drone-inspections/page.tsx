@@ -4,7 +4,7 @@ const DroneInspections = () => {
 	return (
 		<main className='flex flex-col w-full'>
 			<section className='p-4 shadow-sm text-sky-700'>
-				<h2 className='text-4xl font-bold my-4'>Drone Inspections</h2>
+				<h1 className='text-4xl font-bold my-4'>Drone Inspections</h1>
 				<p className='mb-2'>Make initial roofing checks.</p>
 				<p className='mb-2'>Avoid unnecessary accidents.</p>
 				<p className='mb-2'>
