@@ -26,9 +26,9 @@ const Navbar = () => {
 						className='w-64'
 					/>
 				</div>
-				<div className='block sm:hidden'>
+				<div className='block md:hidden'>
 					<button
-						className='sm:hidden text-2xl text-sky-700'
+						className='md:hidden text-2xl text-sky-700'
 						onClick={handleMenuOnClick}
 					>
 						{!isOpen ? <MdOutlineMenu /> : <MdOutlineClose />}
@@ -37,7 +37,7 @@ const Navbar = () => {
 				<div
 					className={`${
 						isOpen ? 'block' : 'hidden'
-					} w-full sm:flex sm:items-center sm:w-auto`}
+					} w-full md:flex md:items-center md:w-auto`}
 				>
 					<div className='sm:flex-grow flex flex-col sm:flex-row mt-10 sm:mt-0'>
 						<Link
