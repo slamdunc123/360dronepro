@@ -16,11 +16,11 @@ const Navbar = () => {
 
 	return (
 		<header className='sticky top-0 left-0 w-full'>
-			<nav className='flex items-center justify-between flex-wrap bg-white shadow-md p-2'>
+			<nav className='flex items-center justify-between flex-wrap bg-white shadow-md p-2' role="navigation" aria-label="main navigation menu">
 				<div className='flex items-center flex-shrink-0 text-sky-700'>
 					<Image
 						src='/360dronepro-logo.svg'
-						alt='360dronepro-logo.svg'
+						alt='360 drone pro company logo'
 						width='0'
 						height='0'
 						className='w-64'
@@ -30,6 +30,9 @@ const Navbar = () => {
 					<button
 						className='md:hidden text-2xl text-sky-700'
 						onClick={handleMenuOnClick}
+						type='button'
+            aria-expanded={isOpen}
+            aria-label='main navigation menu button'
 					>
 						{!isOpen ? <MdOutlineMenu /> : <MdOutlineClose />}
 					</button>

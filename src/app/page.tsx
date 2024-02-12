@@ -28,7 +28,7 @@ const Home = () => {
 							<div className='w-32 h-32 flex flex-col items-center justify-center'>
 								<Image
 									src='/360.svg'
-									alt='360.svg'
+									alt='virtual tours logo'
 									width='128'
 									height='128'
 								/>
@@ -48,7 +48,7 @@ const Home = () => {
 							<div className='w-32 h-32 flex flex-col items-center justify-center'>
 								<Image
 									src='/drone.svg'
-									alt='drone.svg'
+									alt='aerial images logo'
 									width='128'
 									height='128'
 								/>
@@ -65,7 +65,7 @@ const Home = () => {
 							<div className='w-32 h-32 flex flex-col items-center justify-center'>
 								<Image
 									src='/magnifier.svg'
-									alt='magnifier.svg'
+									alt='drone inspections logo'
 									width='96'
 									height='96'
 								/>
