@@ -32,13 +32,12 @@ const Modal = ({
 						<button
 							type='button'
 							onClick={() => setIsModalOpen(false)}
-							className=' '
 						>
 							<XMarkIcon className='h-6 w-6 text-black' />
 						</button>
 						<Image
 							src={activeImage.imgLarge}
-							alt={activeImage.imgLarge}
+							alt={activeImage.alt}
 							width={1280}
 							height={720}
 							unoptimized
