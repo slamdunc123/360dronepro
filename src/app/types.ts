@@ -18,4 +18,5 @@ export type AerialType = {
 	imgSmall: string;
 	imgLarge: string;
 	url: string;
+  alt: string;
 };

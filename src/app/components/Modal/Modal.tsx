@@ -44,12 +44,18 @@ const Modal = ({
 							unoptimized
 						/>
 						<div className='absolute top-[50%] left-0 p-2'>
-							<button onClick={handlePrevOnClick}>
+							<button
+								onClick={handlePrevOnClick}
+								aria-label='previous image'
+							>
 								<ChevronLeftIcon className='h-8 w-8 text-white' />
 							</button>
 						</div>
 						<div className='absolute top-[50%] right-0 p-2'>
-							<button onClick={handleNextOnClick}>
+							<button
+								onClick={handleNextOnClick}
+								aria-label='next image'
+							>
 								<ChevronRightIcon className='h-8 w-8 text-white' />
 							</button>
 						</div>

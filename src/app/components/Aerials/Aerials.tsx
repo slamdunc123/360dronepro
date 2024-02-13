@@ -8,9 +8,10 @@ import { AerialType } from '@/app/types';
 const Aerials = () => {
 	const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 	const [activeImage, setActiveImage] = useState<AerialType>({
-	    imgSmall: '',
+		imgSmall: '',
 		imgLarge: '',
 		url: '',
+		alt: '',
 	});
 	const [activeImageIndex, setActiveImageIndex] = useState(0);
 
@@ -56,7 +57,7 @@ const Aerials = () => {
 						<div key={index} className='w-full shadow-sm'>
 							<Image
 								src={`/${item.imgSmall}`}
-								alt={item.imgSmall}
+								alt={item.alt}
 								width={640}
 								height={360}
 								className='cursor-pointer'

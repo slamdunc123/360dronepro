@@ -8,36 +8,31 @@ import { toursInfo } from './toursInfo';
 //TODO: add toursInfo data to tours database to ensure one source of data, add fields and include a featured boolean field
 const Tours = ({ tours }: ToursPropsType) => {
 	return toursInfo.map((item, index) => (
-		<div
-			className={`md:flex shadow-md border-slate-200 border hover:bg-slate-300 hover:text-black ${
-				index % 2
-					? 'flex-row-reverse bg-slate-100 hover:bg-sky-100'
-					: 'bg-slate-200 '
-			}`}
-			key={item?.id}
-		>
+		<Link href={`/virtual-tours/${item.id}`} key={item?.id}>
 			<div
-				className={`flex flex-col w-full md:w-1/2 ${
-					index % 2 ? 'justify-self-end' : 'justify-self-start'
+				className={`md:flex shadow-md border-slate-200 border bg-slate-100 hover:bg-slate-200 ${
+					index % 2 && 'flex-row-reverse'
 				}`}
 			>
-				<Link href={`/virtual-tours/${item.id}`}>
+				<div
+					className={`flex flex-col w-full md:w-1/2 ${
+						index % 2 ? 'justify-self-end' : 'justify-self-start'
+					}`}
+				>
 					<Image
 						src={`/${item.img}`}
+						alt={item.alt}
 						width='0'
 						height='0'
 						className='w-full'
 						unoptimized
-						alt={item.img}
 					/>
-				</Link>
-			</div>
-			<div
-				className={`flex flex-col w-full md:w-1/2 lg:mt-6 xl:mt-12 ${
-					index % 2 ? 'justify-self-start' : 'justify-self-end'
-				}`}
-			>
-				<Link href={`/virtual-tours/${item?.id}`}>
+				</div>
+				<div
+					className={`flex flex-col w-full md:w-1/2 lg:mt-6 xl:mt-12 ${
+						index % 2 ? 'justify-self-start' : 'justify-self-end'
+					}`}
+				>
 					<div className='flex flex-col items-center justify-center p-4 text-sky-700'>
 						<div className='self-start mb-2'>{item.name}</div>
 						<p className='italic'>
@@ -46,9 +41,9 @@ const Tours = ({ tours }: ToursPropsType) => {
 								: null}
 						</p>
 					</div>
-				</Link>
+				</div>
 			</div>
-		</div>
+		</Link>
 	));
 };
 

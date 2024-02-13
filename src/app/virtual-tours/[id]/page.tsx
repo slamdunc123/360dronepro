@@ -21,11 +21,12 @@ const VirtualTour = async ({ params }: { params: { id: string } }) => {
 
 	return (
 		<main className='w-full h-full'>
+			<h1 className={'hidden'}>{tour && tour.name}</h1>
 			{tour ? (
 				<iframe
 					className='w-full h-full'
 					src={tour && tour.url}
-          allow='xr-spatial-tracking; gyroscope; accelerometer'
+					allow='xr-spatial-tracking; gyroscope; accelerometer'
 				></iframe>
 			) : (
 				'No tour found'
