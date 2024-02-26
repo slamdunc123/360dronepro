@@ -16,7 +16,11 @@ const Navbar = () => {
 
 	return (
 		<header className='sticky top-0 left-0 w-full'>
-			<nav className='flex items-center justify-between flex-wrap bg-white shadow-md p-2' role="navigation" aria-label="main navigation menu">
+			<nav
+				className='flex items-center justify-between flex-wrap bg-white shadow-md p-2'
+				role='navigation'
+				aria-label='main navigation menu'
+			>
 				<div className='flex items-center flex-shrink-0 text-sky-700'>
 					<Image
 						src='/360dronepro-logo.svg'
@@ -26,13 +30,13 @@ const Navbar = () => {
 						className='w-64'
 					/>
 				</div>
-				<div className='block md:hidden'>
+				<div className='block lg:hidden'>
 					<button
-						className='md:hidden text-2xl text-sky-700'
+						className='lg:hidden text-2xl text-sky-700'
 						onClick={handleMenuOnClick}
 						type='button'
-            aria-expanded={isOpen}
-            aria-label='main navigation menu button'
+						aria-expanded={isOpen}
+						aria-label='main navigation menu button'
 					>
 						{!isOpen ? <MdOutlineMenu /> : <MdOutlineClose />}
 					</button>
@@ -40,26 +44,26 @@ const Navbar = () => {
 				<div
 					className={`${
 						isOpen ? 'block' : 'hidden'
-					} w-full md:flex md:items-center md:w-auto`}
+					} w-full lg:flex lg:items-center lg:w-auto`}
 				>
-					<div className='sm:flex-grow flex flex-col sm:flex-row mt-10 sm:mt-0'>
+					<div className='lg:flex-grow flex flex-col lg:flex-row mt-10 lg:mt-0'>
 						<Link
 							href='/'
-							className='sm:mr-4 text-sky-700 hover:text-sky-300'
+							className='lg:mr-4 text-sky-700 hover:text-sky-300'
 							onClick={handleMenuOnClick}
 						>
 							Home
 						</Link>
 						<Link
 							href='/virtual-tours'
-							className='sm:mr-4 text-sky-700 hover:text-sky-300'
+							className='lg:mr-4 text-sky-700 hover:text-sky-300'
 							onClick={handleMenuOnClick}
 						>
 							Virtual Tours
 						</Link>
 						<Link
 							href='/aerial-images'
-							className='sm:mr-4 text-sky-700 hover:text-sky-300'
+							className='lg:mr-4 text-sky-700 hover:text-sky-300'
 							onClick={handleMenuOnClick}
 						>
 							Aerial Images
