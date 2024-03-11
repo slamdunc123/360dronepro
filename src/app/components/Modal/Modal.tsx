@@ -31,17 +31,20 @@ const Modal = ({
 					<div className='text-right w-full md:w-3/4 xl:w-2/3 relative'>
 						<button
 							type='button'
+							aria-label='close modal'
 							onClick={() => setIsModalOpen(false)}
 						>
 							<XMarkIcon className='h-6 w-6 text-black' />
 						</button>
-						<Image
-							src={activeImage.imgLarge}
-							alt={activeImage.alt}
-							width={1280}
-							height={720}
-							unoptimized
-						/>
+						{activeImage.imgLarge && (
+							<Image
+								src={activeImage.imgLarge}
+								alt={activeImage.alt}
+								width={1280}
+								height={720}
+								unoptimized
+							/>
+						)}
 						<div className='absolute top-[50%] left-0 p-2'>
 							<button
 								onClick={handlePrevOnClick}
