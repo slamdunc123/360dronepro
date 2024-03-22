@@ -1,6 +1,4 @@
-import Image from 'next/image';
-
-import Service from './components/Service/Service'
+import Service from './components/Service/Service';
 import { services } from './services';
 
 const Home = () => {
@@ -20,11 +18,9 @@ const Home = () => {
 				</h2>
 			</section>
 			<section className='p-4 shadow-sm text-sky-700 flex justify-center'>
-				<div className='flex flex-col md:flex-row w-full items-center gap-y-4 sm:gap-x-2 '>
+				<div className='flex flex-col lg:flex-row w-full items-center gap-y-4 sm:gap-x-2 '>
 					{services.map((item) => {
-						return (
-							<Service item={item} key={item.id} />
-						);
+						return <Service item={item} key={item.id} />;
 					})}
 				</div>
 			</section>

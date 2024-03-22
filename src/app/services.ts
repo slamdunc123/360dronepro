@@ -8,7 +8,7 @@ export const services = [
 			width: 128,
 			height: 128,
 		},
-		subHeading: 'Enhance the viewer&apos;s experience with a virtual tour',
+		subHeading: 'Enhance the viewer\'s experience with a virtual tour',
 		bullets: [
 			'. Virtual walk through',
 			'. User interaction',
@@ -26,7 +26,7 @@ export const services = [
 			width: 128,
 			height: 128,
 		},
-		subHeading: "Get a bird's eye view with aerial images",
+		subHeading: 'Get a bird\'s eye view with aerial images',
 		bullets: [
 			'. Bird’s eye views',
 			'. Overhead perspective',
