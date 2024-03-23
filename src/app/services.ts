@@ -8,7 +8,7 @@ export const services = [
 			width: 128,
 			height: 128,
 		},
-		subHeading: 'Enhance the viewer\'s experience with a virtual tour',
+		subHeading: 'Enhance viewer experience with a virtual tour',
 		bullets: [
 			'. Virtual walk through',
 			'. User interaction',
@@ -26,9 +26,9 @@ export const services = [
 			width: 128,
 			height: 128,
 		},
-		subHeading: 'Get a bird\'s eye view with aerial images',
+		subHeading: "Capture bird's eye views with aerial images",
 		bullets: [
-			'. Bird’s eye views',
+			'. Shots from high angles',
 			'. Overhead perspective',
 			'. Capture scale',
 			'. Showcase full exterior',
@@ -44,7 +44,7 @@ export const services = [
 			width: 96,
 			height: 96,
 		},
-		subHeading: 'Check for any roofing issues with a drone inspection',
+		subHeading: 'Check for roofing defects with a drone inspection',
 		bullets: [
 			'. Blocked gutters',
 			'. Mortar decay',

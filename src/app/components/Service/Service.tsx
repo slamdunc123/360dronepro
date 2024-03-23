@@ -21,7 +21,7 @@ const Service = ({ item }: serviceTypeProps) => {
 	return (
 		<div className='flex-1 flex justify-center w-full h-full relative'>
 			<div
-				className='z-2 opacity-5 absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat'
+				className='z-2 opacity-10 absolute top-0 left-0 w-full h-full bg-cover bg-center bg-no-repeat'
 				style={{ backgroundImage: `url(${item.image.path})` }}
 			></div>
 			<Link
@@ -39,7 +39,7 @@ const Service = ({ item }: serviceTypeProps) => {
 						height={item.image.height}
 					/>
 				</div>
-				<div className='justify-start w-11/12 h-64  bg-sky-700 text-white  font-bold rounded-lg p-2 shadow'>
+				<div className='justify-start w-11/12 h-60   bg-sky-700 text-white  font-bold rounded-lg p-4 shadow'>
 					<p className='mb-4'>{item.subHeading}</p>
 					{item.bullets.map((item: any, index: number) => {
 						return <p key={index}>{item}</p>;
