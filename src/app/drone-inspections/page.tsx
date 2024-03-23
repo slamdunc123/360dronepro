@@ -8,7 +8,7 @@ const DroneInspections = () => {
         <p className="mb-2">Make initial roofing checks.</p>
         <p className="mb-2">Avoid unnecessary accidents.</p>
         <p className="mb-2">
-          Check out some of our drone inspection media below.
+          Check out some of our drone inspection images below.
         </p>
       </section>
       <section className="p-4 text-sky-700 shadow-sm">
