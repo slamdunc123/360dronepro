@@ -5,6 +5,7 @@ import Image from "next/image";
 type serviceTypeProps = {
   item: {
     id: number;
+    url: string;
     heading: string;
     subHeading: string;
     bullets: string[];
@@ -25,7 +26,7 @@ const Service = ({ item }: serviceTypeProps) => {
         style={{ backgroundImage: `url(${item.image.path})` }}
       ></div>
       <Link
-        href={"/virtual-tours"}
+        href={item.url}
         className="z-1 relative flex h-full w-full cursor-pointer flex-col items-center rounded-xl border-2 px-2 py-4 shadow-xl hover:bg-slate-300"
       >
         <h3 className="mb-4 w-full rounded-lg bg-sky-700 p-2 text-center text-xl font-bold text-white">
@@ -39,7 +40,7 @@ const Service = ({ item }: serviceTypeProps) => {
             height={item.image.height}
           />
         </div>
-        <div className="h-64 w-full justify-start  rounded-lg border-2 border-sky-700  p-4 font-bold text-sky-700 shadow">
+        <div className="h-64 w-full justify-start rounded-lg border-2 border-sky-700 p-4 font-bold text-sky-700 shadow">
           <p className="mb-4">{item.subHeading}</p>
           {item.bullets.map((item: any, index: number) => {
             return <p key={index}>{item}</p>;

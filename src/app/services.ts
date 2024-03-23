@@ -2,6 +2,7 @@ export const services = [
 	{
 		id: 1,
 		heading: 'Virtual Tours',
+    url: '/virtual-tours',
 		image: {
 			path: '/360.svg',
 			alt: 'virtual tours logo',
@@ -20,6 +21,7 @@ export const services = [
 	{
 		id: 2,
 		heading: 'Aerial Images',
+    url: '/aerial-images',
 		image: {
 			path: '/drone.svg',
 			alt: 'aerial images logo',
@@ -38,6 +40,7 @@ export const services = [
 	{
 		id: 3,
 		heading: 'Drone Inspections',
+    url: '/drone-inspections',
 		image: {
 			path: '/magnifier.svg',
 			alt: 'drone inspections logo',
