@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <header className="sticky left-0 top-0 z-10 w-full">
       <nav
-        className="flex flex-wrap items-center justify-between bg-white p-2 shadow-md"
+        className="flex flex-wrap items-center justify-between bg-white p-4 shadow-md"
         role="navigation"
         aria-label="main navigation menu"
       >
