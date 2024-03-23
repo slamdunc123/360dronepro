@@ -10,10 +10,10 @@ export const services = [
 		},
 		subHeading: 'Enhance viewer experience with a virtual tour',
 		bullets: [
+			'. 360 perspective',
 			'. Virtual walk through',
 			'. User interaction',
 			'. Increase engagement',
-			'. Stand out from the crowd',
 			'. Reach a wider audience',
 		],
 	},
@@ -28,7 +28,7 @@ export const services = [
 		},
 		subHeading: "Capture bird's eye views with aerial images",
 		bullets: [
-			'. Shots from high angles',
+			'. High angle shots',
 			'. Overhead perspective',
 			'. Capture scale',
 			'. Showcase full exterior',
