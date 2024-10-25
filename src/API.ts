@@ -117,7 +117,7 @@ export type ModelIDInput = {
 
 export type ModelTourConnection = {
   __typename: "ModelTourConnection",
-  items?:  Array<Tour | null > | null,
+  items:  Array<Tour | null >,
   nextToken?: string | null,
 };
 
@@ -205,7 +205,7 @@ export type ListToursQueryVariables = {
 export type ListToursQuery = {
   listTours?:  {
     __typename: "ModelTourConnection",
-    items?:  Array< {
+    items:  Array< {
       __typename: "Tour",
       id: string,
       name: string,
@@ -215,9 +215,12 @@ export type ListToursQuery = {
       category: string,
       createdAt: string,
       updatedAt: string,
-    } | null > | null,
+    } | null >,
     nextToken?: string | null,
   } | null,
+};
+
+export type OnCreateTourSubscriptionVariables = {
 };
 
 export type OnCreateTourSubscription = {
@@ -234,6 +237,9 @@ export type OnCreateTourSubscription = {
   } | null,
 };
 
+export type OnUpdateTourSubscriptionVariables = {
+};
+
 export type OnUpdateTourSubscription = {
   onUpdateTour?:  {
     __typename: "Tour",
@@ -246,6 +252,9 @@ export type OnUpdateTourSubscription = {
     createdAt: string,
     updatedAt: string,
   } | null,
+};
+
+export type OnDeleteTourSubscriptionVariables = {
 };
 
 export type OnDeleteTourSubscription = {
