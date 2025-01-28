@@ -36,7 +36,7 @@ const VirtualTours = async () => {
           have to say.
         </p>
       </section>
-      <section className="p-4 text-sky-700 shadow-sm">
+      {/* <section className="p-4 text-sky-700 shadow-sm">
         <h2 className="my-4 text-2xl font-bold">Contact Us</h2>
         <p className="mb-2">
           360dronepro provide a virtual tour service, where we work closely with
@@ -46,7 +46,7 @@ const VirtualTours = async () => {
           To discuss your requirements please contact us on -{" "}
           <span className="text-lg text-sky-700">07968903859</span>.
         </p>
-      </section>
+      </section> */}
       <section className="space-y-4 p-4">
         <Tours tours={tours} />
       </section>
