@@ -12,6 +12,9 @@ const AerialImages = () => {
         <p className="mb-2">Add aerial images to your property portfolio.</p>
         <p className="mb-2">Check out some of our aerial images below.</p>
       </section>
+      <section className="p-1 shadow-sm">
+        <Aerials />
+      </section>
       <section className="p-4 text-sky-700 shadow-sm">
         <h2 className="my-4 text-2xl font-bold">Contact Us</h2>
         <p className="mb-2">
@@ -22,9 +25,6 @@ const AerialImages = () => {
           To discuss your requirements please contact us on -{" "}
           <span className="text-lg text-sky-700">07968903859</span>.
         </p>
-      </section>
-      <section className="p-4 shadow-sm">
-        <Aerials />
       </section>
     </main>
   );

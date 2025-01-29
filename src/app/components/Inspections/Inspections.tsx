@@ -51,7 +51,7 @@ const Inspections = () => {
 					handleNextOnClick={handleNextOnClick}
 				/>
 			)}
-			<div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-4'>
+			<div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-1'>
 				{inspectionsInfo &&
 					inspectionsInfo.map((item, index) => (
 						<div key={index} className='w-full shadow-sm'>
