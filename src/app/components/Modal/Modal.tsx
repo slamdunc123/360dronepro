@@ -24,7 +24,7 @@ const Modal = ({
 			role='dialog'
 			aria-modal='true'
 		>
-			<div className='fixed inset-0 bg-white bg-opacity-80 transition-opacity shadow-lg'></div>
+			<div className='fixed inset-0 bg-black bg-opacity-80 transition-opacity shadow-lg'></div>
 
 			<div className='fixed inset-0 z-10 w-screen overflow-y-auto'>
 				<div className='flex min-h-full w-full items-center justify-center p-4 text-center'>
@@ -34,7 +34,7 @@ const Modal = ({
 							aria-label='close modal'
 							onClick={() => setIsModalOpen(false)}
 						>
-							<XMarkIcon className='h-6 w-6 text-black' />
+							<XMarkIcon className='h-6 w-6 text-white' />
 						</button>
 						{activeImage.imgLarge && (
 							<Image
